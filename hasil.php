@@ -16,29 +16,22 @@
       if(isset($_POST['gejala'])) {
         $gejala = $_POST['gejala'];
         // Mencari nilai probabilitas untuk setiap penyakit berdasarkan gejala yang dipilih
-        $sql = "SELECT p.kode_penyakit, p.nama_penyakit, ROUND(SUM(cf.nilai_cf)*100, 2) AS nilai_cf
+        $sql = "SELECT p.kode_penyakit, p.nama_penyakit, 
+                ROUND(SUM(cf.nilai_cf), 2)*100 AS nilai_cf,
+                p.penanganan
                 FROM penyakit p
                 JOIN cf ON p.id = cf.id_penyakit
+                JOIN gejala g ON cf.id_gejala = g.id
                 WHERE cf.id_gejala IN ('" . implode("', '", $gejala) . "')
                 GROUP BY p.id
-                ORDER BY nilai_cf DESC";
+                ORDER BY nilai_cf DESC
+                LIMIT 1";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
-          // Menampilkan hasil diagnosis dalam tabel
-          echo "<table>
-                <tr>
-                  <th>Kode Penyakit</th>
-                  <th>Nama Penyakit</th>
-                  <th>Nilai Probabilitas</th>
-                </tr>";
-          while($row = $result->fetch_assoc()) {
-            echo "<tr>
-                    <td>" . $row['kode_penyakit'] . "</td>
-                    <td>" . $row['nama_penyakit'] . "</td>
-                    <td>" . $row['nilai_cf'] . "%</td>
-                  </tr>";
-          }
-          echo "</table>";
+          // Menampilkan hasil diagnosis
+          $row = $result->fetch_assoc();
+          echo "<p> Anda menderita " . $row['nama_penyakit'] . " dengan probabilitas " . $row['nilai_cf'] . "%</p>";
+          echo "<p> Saran penanganan: " . $row['penanganan'] . "</p>";
         } else {
           echo "Tidak ada hasil diagnosis.";
         }

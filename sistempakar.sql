@@ -19,13 +19,14 @@ INSERT INTO gejala (kode_gejala, nama_gejala) VALUES
 CREATE TABLE IF NOT EXISTS penyakit (
   id INT PRIMARY KEY AUTO_INCREMENT,
   kode_penyakit VARCHAR(10) NOT NULL,
-  nama_penyakit VARCHAR(255) NOT NULL
+  nama_penyakit VARCHAR(255) NOT NULL,
+  penanganan VARCHAR(300) NOT NULL
 );
  -- Menambahkan data contoh ke tabel penyakit
-INSERT INTO penyakit (kode_penyakit, nama_penyakit) VALUES
-  ('P01', 'Pneumonia'),
-  ('P02', 'Tuberkulosis'),
-  ('P03', 'Bronkitis');
+INSERT INTO penyakit (kode_penyakit, nama_penyakit, penanganan) VALUES
+  ('P01', 'Pneumonia', 'Istirahat yang cukup'),
+  ('P02', 'Tuberkulosis', 'Istirahat yang cukup'),
+  ('P03', 'Bronkitis', 'Istirahat yang cukup');
  -- Membuat tabel nilai keyakinan (CF)
 CREATE TABLE IF NOT EXISTS cf (
   id INT PRIMARY KEY AUTO_INCREMENT,
