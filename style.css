@@ -1,0 +1,50 @@
+/* Style untuk elemen header */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Style untuk elemen body */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/* Style untuk elemen h1 */
+h1 {
+	margin-top: 30px;
+	text-align: center;
+}
+
+/* Style untuk elemen h2 */
+h2 {
+	margin-top: 30px;
+	text-align: center;
+}
+
+/* Style untuk elemen p */
+p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 20px 0;
+	padding: 0 20px;
+}
+
+/* Style untuk elemen strong */
+strong {
+	color: #f00;
+}
+
+/* Style untuk elemen a */
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+/* Style untuk elemen a:hover */
+a:hover {
+	color: #f00;
+}
