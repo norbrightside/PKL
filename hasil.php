@@ -5,6 +5,16 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   </head>
   <body>
+  <header>
+            <nav>
+                <a href="index.php"> <b> Puskesmas Talawi</b> </a>
+                <ul>
+                    <li> <a href="index.php"> Beranda </a></li>
+                    <li> <a href="#blog"> Blog</a></li>
+                    <li> <a href="#kontak"> Kontak</a></li>
+                </ul>
+            </nav>
+        </header>
     <h1>Hasil Diagnosis</h1>
     <?php
       // Menyambung ke database
