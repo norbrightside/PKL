@@ -1,0 +1,193 @@
+/*------------body, main, footer-------------*/
+body{
+    font-family: 'tahoma', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff !important;   
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main{
+    padding: 0px;
+    margin: auto;
+    overflow: auto;
+}
+
+footer{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: #749bff;
+}
+/*--------------------body, main, footer---------*/
+
+/*--------------------flex-----------------*/
+.container {
+    display: flex;
+    width: 85%;
+    height: auto;
+    padding: 10px 0px 10px 0px;
+    margin: auto;
+    border-radius: 10px;
+
+}
+.card{
+    box-shadow: 0 1px 20px 0 rgb(79 90 100 / 8%);
+    border-radius: 0px;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    margin: 10px 10px 5px 5px;
+    width: 100%;
+}
+/*-------------------------card----------------*/
+
+/*--------------------header & nav-------------*/
+
+header{
+    display: inline;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #454545;
+}
+nav li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+/*-------------header & nav----------------------*/
+
+/*------------Intro-------------*/
+#intro-text{
+    float: left;
+    width: 50%;
+}
+
+#intro-text h1{
+    font-size: 4rem;
+    margin: 0px 0px;
+    color: #fff;
+}
+#intro-image{
+    float: right;
+    width: 50%;
+    padding-left: 20px;
+}
+#intro{
+    background-color: #749bff;
+    padding: 30px;
+    display: flex;
+}
+
+.profile-image{
+    width: 100%;
+    height: 550px;
+    object-fit: contain;
+    object-position: top;
+}
+/*--------- intro --------*/
+/*--------- blog --------*/
+#blog{
+    background-color: #f6f9fc;
+    padding-top: 30px;
+}
+
+.blog-desc{
+    padding: 10px 10px 10px 10px;
+}
+
+.blog-image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*-------- Blog ---------*/
+/*-------- Form Kontak ---------*/
+input[type="text"], textarea{
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 14pt;
+    margin: 6px 0px;
+    width: 80%;
+}
+/*--------form untuk kontak--------*/
+/*---------text & margin ---------*/
+.judul{ color: #749bff; font-size: 2rem; font-weight: 100;}
+
+.teks-tengah{ text-align: center !important;}
+.teks-kiri{ text-align: left !important;}
+.teks-kanan{ text-align: right !important;}
+.txtbiru {color: #007bff !important;}
+.txtungu {color: #563d7c !important;}
+.text-putih{ color: #fff !important;}
+
+.btn-putih{
+    background-color: #fff !important;
+    color: #444444 !important;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-biru{
+    background-color: #749bff !important;
+    color: #fff !important;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+}
+/*-------- text & margin--------*/
+
+/*-------media query---------*/
+@media screen and (max-width: 720px) {
+    main{
+        padding: 10px 10px 10px 10px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    #intro-text h1{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #intro{
+        display: flex;
+        flex-direction: flex;
+    }
+    #intro-image{
+        width: 100px;
+        height: 100px;
+    }
+    #intro-text{
+        width: 50%;
+        float: left;
+    }
+    .profile-image{
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        object-position: top;
+    }
+}
+/*-------- media querry------------*/

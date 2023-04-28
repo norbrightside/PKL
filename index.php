@@ -2,11 +2,12 @@
 <html>
   <head>
     <title>Halaman Utama</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   </head>
   <body>
     <h1>Selamat Datang di Sistem Pakar Penyakit Paru-Paru</h1>
     <form action="hasil.php" method="post">
-      <h2>Pilih Gejala yang Anda Alami:</h2>
+      <h2 class="container">  Pilih Gejala yang Anda Alami:</h2>
       <?php
         // Menyambung ke database
         $conn = new mysqli("localhost", "root", "", "sistem_pakar");
@@ -20,7 +21,7 @@
         if ($result->num_rows > 0) {
           // Menampilkan data gejala dalam checkbox
           while($row = $result->fetch_assoc()) {
-            echo "<input type='checkbox' name='gejala[]' value='" . $row["id"] . "'>" . $row["kode_gejala"] . " - " . $row["nama_gejala"] . "<br>";
+            echo "<div class='teks-kiri'><input type='checkbox' name='gejala[]' value='" . $row["id"] . "'>" . $row["kode_gejala"] . " - " . $row["nama_gejala"] . "<br>";
           }
         } else {
           echo "Tidak ada data gejala.";
@@ -29,7 +30,7 @@
         $conn->close();
       ?>
       <br>
-      <input type="submit" value="Diagnosis">
+      <input type="submit" class="btn-biru" value="Diagnosis">
     </form>
   </body>
 </html>

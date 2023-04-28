@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Hasil Diagnosis</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   </head>
   <body>
     <h1>Hasil Diagnosis</h1>
