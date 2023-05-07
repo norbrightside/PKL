@@ -1,15 +1,12 @@
 <?php
-$servername = "localhost";
-$username = "root";
+$host = "localhost";
+$user = "root";
 $password = "";
-$dbname = "sistempakar_paru";
-
-// Membuat koneksi
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-
-// Memeriksa koneksi
+$database = "penyakit_paru";
+// membuat koneksi
+$conn = mysqli_connect($host, $user, $password, $database);
+// check koneksi
 if (!$conn) {
     die("Koneksi gagal: " . mysqli_connect_error());
 }
-echo "Koneksi berhasil";
 ?>

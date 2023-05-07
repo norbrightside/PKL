@@ -1,58 +1,27 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Hasil Diagnosis</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  </head>
-  <body>
-  <header>
-            <nav>
-                <a href="index.php"> <b> Puskesmas Talawi</b> </a>
-                <ul>
-                    <li> <a href="index.php"> Beranda </a></li>
-                    <li> <a href="#blog"> Blog</a></li>
-                    <li> <a href="#kontak"> Kontak</a></li>
-                </ul>
-            </nav>
-        </header>
-    <h1>Hasil Diagnosis</h1>
-    <?php
-      // Menyambung ke database
-      $conn = new mysqli("localhost", "root", "", "sistem_pakar");
-      // Memeriksa koneksi
-      if ($conn->connect_error) {
-        die("Koneksi gagal: " . $conn->connect_error);
-      }
-      // Mendapatkan gejala yang dipilih dari halaman index
-      if(isset($_POST['gejala'])) {
-        $gejala = $_POST['gejala'];
-        // Mencari nilai probabilitas untuk setiap penyakit berdasarkan gejala yang dipilih
-        $sql = "SELECT p.kode_penyakit, p.nama_penyakit, 
-                ROUND(SUM(cf.nilai_cf), 2)*100 AS nilai_cf,
-                p.penanganan
-                FROM penyakit p
-                JOIN cf ON p.id = cf.id_penyakit
-                JOIN gejala g ON cf.id_gejala = g.id
-                WHERE cf.id_gejala IN ('" . implode("', '", $gejala) . "')
-                GROUP BY p.id
-                ORDER BY nilai_cf DESC
-                LIMIT 1";
-        $result = $conn->query($sql);
-        if ($result->num_rows > 0) {
-          // Menampilkan hasil diagnosis
-          $row = $result->fetch_assoc();
-          echo "<p> Anda menderita " . $row['nama_penyakit'] . " dengan probabilitas " . $row['nilai_cf'] . "%</p>";
-          echo "<p> Saran penanganan: " . $row['penanganan'] . "</p>";
-        } else {
-          echo "Tidak ada hasil diagnosis.";
-        }
-      } else {
-        echo "Tidak ada gejala yang dipilih.";
-      }
-      // Menutup koneksi
-      $conn->close();
-    ?>
-    <br>
-    <a href="index.php">Kembali ke Halaman Utama</a>
-  </body>
+<?php 
+session_start(); 
+$hasil = $_SESSION['hasil_diagnosa']; 
+if ($hasil >= 0.9) { 
+    $status = "Sangat mungkin"; 
+} else if ($hasil >= 0.7) { 
+    $status = "Mungkin"; 
+} else if ($hasil >= 0.5) { 
+    $status = "Kemungkinan kecil"; 
+} else { 
+    $status = "Tidak mungkin"; 
+} 
+$nama_penyakit = $_SESSION['nama_penyakit']
+?> 
+<!DOCTYPE html> 
+<html> 
+<head>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
+    <title>Halaman Hasil Diagnosa</title> 
+</head> 
+<body> 
+    <h1>Hasil Diagnosa</h1> 
+    <p>Hasil diagnosa Anda adalah <?php echo $status;?> menderita <?php echo $nama_penyakit; ?></p> 
+    <p>Persentase kepercayaan: <?php echo round($hasil * 100, 2); ?>%</p> 
+	<a href="index.php" class="btn btn-biru"> Kembali ke Halaman Utama</a> 
+</body> 
 </html>
