@@ -19,15 +19,32 @@ CREATE DATABASE IF NOT EXISTS penyakit_paru;
 );
  INSERT INTO penyakit (penyakit_nama, penyakit_nilai_cf) VALUES
 ('Tuberkulosis', 0.9),
-('Asma', 0.8),
-('Bronkitis', 0.7),
+('Paru Obstruktif Kronik (PPOK)', 0.8),
+('Kanker Paru', 0.7),
 ('Pneumonia', 0.6);
  INSERT INTO gejala (gejala_nama) VALUES
 ('Batuk lebih dari 2 minggu'),
-('Sesak nafas'),
+('Batuk Berdahak'),
+('Sesak Nafas'),
+('Badan Lemas'),
+('Nyeri dada'),
+('Batuk Dapat Campur Darah'),
+('Tidak Nafsu Makan'),
+('Berkeringat Pada Malam Hari'),
+('Menggigil'),
 ('Demam'),
-('Mudah lelah'),
-('Nyeri dada');
+('Berat Badan Menurun'),
+('Batuk Kronik Dengan/Tanpa Dahak Yang Tidak Kunjung Sembuh'),
+('Makin Sering Tersengal-Sengal'),
+('Rasa Berat Di Dada'),
+('Batuk Berkelanjutan dan Bertambah Parah Hingga Mengalami Batuk Berdarah'),
+('Pembengkakan Pada Muka Atau Leher'),
+('Sakit Kepala '),
+('Sakit Pada Tulang/Bahu/Lengan/Tangan'),
+('Suara Menjadi Serak'),
+('Kesulitan Atau Sakit Saat Menelan Sesuatu'),
+('Perubahan Bentuk Ujung Jari Menjadi Cembung ');
  INSERT INTO kondisi (kondisi_nama, kondisi_nilai_cf) VALUES
 ('Pasti', 0.9),
-('Mungkin', 0.7);
+('Mungkin', 0.7),
+('Tidak', 0);
