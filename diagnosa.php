@@ -87,7 +87,6 @@ $nama_penyakit = $row_penyakit['penyakit_nama'];
                 <a href="index.php"> <b> Puskesmas Talawi</b> </a>
                 <ul>
                     <li> <a href="index.php"> Beranda </a></li>
-                    <li> <a href="#blog"> Blog</a></li>
                     <li> <a href="#kontak"> Kontak</a></li>
                 </ul>
             </nav>

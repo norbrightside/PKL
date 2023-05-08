@@ -99,22 +99,22 @@
                 <div class="container">
                     <div style="width: 50%;text-align: left;">
                     <b> Telp :</b>
-                    <p> 081245645787</p>
+                    <p> (0754) 410444</p>
 
-                    <b> Email :</b>
-                    <p> mriszkiwiead@gmail.com</p>
-
-                    <b> Website : </b>
-                    <p> waesdafwafwfa.com</p>
+                    <b> Alamat :</b>
+                    <p> Talawi Hilir, Talawi, Kota Sawahlunto
+                    <p> Sumatera Barat </p>
+                    
+                    <b> Jam buka :</b>
+                    <p> 24 Jam</p>
                     </div>
-                    <form name="kontak">
-                        <input type="text" name="nmama" placeholder="Nama"/>
-                        <input type="text" name="email" placeholder="Alamat Email"/>
+                    <form action="send.php" method="post" target="_blank">
+                        <input type="text" name="name" placeholder="Nama"/>
+                        <input type="text" name="usia" placeholder="Usia"/>
                         <input type="text" name="pesan" placeholder="Pesan Anda"/>
-
                     </textarea>
                     <br/>
-                    <button name="Simpan" class="btn btn-biru" > Kirim Pesan</button>
+                    <button type="submit" name="submit" class="btn btn-biru" > Kirim Pesan</button>
                     </form>
                 </div>
                 </section>

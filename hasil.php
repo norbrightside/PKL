@@ -16,7 +16,39 @@ $nama_penyakit = $_SESSION['nama_penyakit']
 <html> 
 <head>
 <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
-    <title>Halaman Hasil Diagnosa</title> 
+<title> Web Portofolio  </title>    
+    <meta name="viewport"   content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web Portofolio">
+    <meta name="author" content="Ane">
+    <meta name="keywords" content="web Portofolio">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>    
+<title>Halaman Hasil Diagnosa</title> 
 </head> 
 <body> 
     <h1>Hasil Diagnosa</h1> 
