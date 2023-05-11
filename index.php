@@ -63,15 +63,15 @@
 
             <!---bagian blog-->
             <section id="blog">
-                <h1 class="judul teks-tengah"> Blog Saya</h1>
+                <h1 class="judul teks-tengah"> Macam Penyakit Paru</h1>
                 <div class="container">
                     <!---artikel 1-->
                     <article class="card">
-                        <img src="images/1.jpg" class="blog-image" alt="Judul Blog 1">
+                        <img src="assets/images/1.png" class="blog-image" alt="Tuberkolosis (TBC)">
                         <section class="blog-desc">
                             <span> 28 Maret 2023</span>
                             <h3 class="teks-kiri">
-                                <a href="detail-blog.html">Judul Blog 1</a> 
+                                <a href="detail-blog.html">Tuberkolosis (TBC)</a> 
                             </h3>
                             <p class="teks-kiri">Ini adalah deskripsi blog</p>
                         </section>
