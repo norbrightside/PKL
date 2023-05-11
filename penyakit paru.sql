@@ -45,15 +45,15 @@ CREATE DATABASE IF NOT EXISTS penyakit_paru;
 ('Batuk Dapat Campur Darah'),
 ('Berat Badan Turun'),
 ('Tidak Nafsu Makan'),
-('Berkeringat Pada Malam Hari');
-('Batuk Kronik Dengan/Tanpa Dahak Yang Tidak Kunjung Sembuh');
-('Makin Sering Tersengal-sengal');
-('Rasa Berat Di Dada');
-('Mual');
-('Banyak Berkeringat');
-('Keletihan');
-('Napas Cepat');
-('Nyeri Kepala');
+('Berkeringat Pada Malam Hari'),
+('Batuk Kronik Dengan/Tanpa Dahak Yang Tidak Kunjung Sembuh'),
+('Makin Sering Tersengal-sengal'),
+('Rasa Berat Di Dada'),
+('Mual'),
+('Banyak Berkeringat'),
+('Keletihan'),
+('Napas Cepat'),
+('Nyeri Kepala'),
 ('Hidung Tersumbat');
  INSERT INTO kondisi (kondisi_nama, kondisi_nilai_cf) VALUES
 ('Iya', 1),
