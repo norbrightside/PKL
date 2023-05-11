@@ -25,30 +25,39 @@ CREATE DATABASE IF NOT EXISTS penyakit_paru;
 ('Penyakit Paru Obstruktif Kronik (PPOK)'),
 ('Pneumonia');
  INSERT INTO gejala (gejala_nama) VALUES
-('Batuk lebih dari 2 minggu'),
+('Batuk '),
 ('Batuk Berdahak'),
 ('Sesak Nafas'),
-('Badan Lemas'),
-('Nyeri dada'),
-('Batuk Dapat Campur Darah'),
-('Tidak Nafsu Makan'),
-('Berkeringat Pada Malam Hari'),
-('Menggigil'),
 ('Demam'),
-('Berat Badan Menurun'),
-('Batuk Kronik Dengan/Tanpa Dahak Yang Tidak Kunjung Sembuh'),
-('Makin Sering Tersengal-Sengal'),
-('Rasa Berat Di Dada'),
-('Batuk Berkelanjutan dan Bertambah Parah Hingga Mengalami Batuk Berdarah'),
-('Pembengkakan Pada Muka Atau Leher'),
-('Sakit Kepala '),
-('Sakit Pada Tulang/Bahu/Lengan/Tangan'),
-('Suara Menjadi Serak'),
-('Kesulitan Atau Sakit Saat Menelan Sesuatu'),
-('Perubahan Bentuk Ujung Jari Menjadi Cembung ');
+('Napas Berbunyi (Mengi)'),
+('Ada Riwayat Alergi'),
+('Ada Riwayat Asma dalam Keluarga'),
+('Batuk Makin Parah'),
+('Sulit Menelun Sesuatu'),
+('Muntah Karena Batuk'),
+('Batuk Yang Disertai Dahak Berwarna putih, Kuning, atau Hijau'),
+('Nyeri Dada'),
+('Sakit Tenggorokan'),
+('Menggigil'),
+('Nyeri Otot dan/atau Punggung '),
+('Badan Lemas'),
+('Batuk >2 Minggu '),
+('Batuk Dapat Campur Darah'),
+('Berat Badan Turun'),
+('Tidak Nafsu Makan'),
+('Berkeringat Pada Malam Hari');
+('Batuk Kronik Dengan/Tanpa Dahak Yang Tidak Kunjung Sembuh');
+('Makin Sering Tersengal-sengal');
+('Rasa Berat Di Dada');
+('Mual');
+('Banyak Berkeringat');
+('Keletihan');
+('Napas Cepat');
+('Nyeri Kepala');
+('Hidung Tersumbat');
  INSERT INTO kondisi (kondisi_nama, kondisi_nilai_cf) VALUES
 ('Iya', 1),
-('Hampir Iya' 0,8),
-('Mungkin', 0,6),
-('Hampir Tidak' 0,2),
+('Hampir Iya', 0.8),
+('Mungkin', 0.6),
+('Hampir Tidak', 0.2),
 ('Tidak', 0);
