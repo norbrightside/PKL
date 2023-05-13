@@ -44,49 +44,49 @@ if (isset($_POST['diagnosa'])) {
      // melakukan diagnosa sesuai dengan rules yang telah ditentukan
     $hasil1 = min($cf_gejala2, $cf_gejala3, $cf_gejala4, $cf_gejala30) * 0.55;
     $hasil2 = min($cf_gejala2, $cf_gejala3, $cf_gejala4) * 0.45;
-    $hasil3 = min($cf_gejala2, $cf_gejala3, $cf_gejala4) * 0.69;
-    $hasil4 = min($cf_gejala2, $cf_gejala3, $cf_gejala4) * 0.31;
-    $hasil5 = min($cf_gejala2, $cf_gejala3, $cf_gejala4) * 0.55;
-    $hasil6 = min($cf_gejala2, $cf_gejala3, $cf_gejala4) * 0.45;
-    $hasil7 = min($cf_gejala2, $cf_gejala3, $cf_gejala4) * 0.61;
-    $hasil8 = min($cf_gejala2, $cf_gejala3, $cf_gejala4) * 0.39;
-    $hasil9 = min($cf_gejala2, $cf_gejala3, $cf_gejala4) * 0.54;
-    $hasil10 = min($cf_gejala2, $cf_gejala3, $cf_gejala4) * 0.46;
-    $hasil11 = min($cf_gejala2, $cf_gejala3, $cf_gejala4) * 0.50;
-    $hasil12 = min($cf_gejala2, $cf_gejala3, $cf_gejala4) * 0.50;
-    $hasil13 = min($cf_gejala2, $cf_gejala3, $cf_gejala4) * 0.64;
-    $hasil14 = min($cf_gejala2, $cf_gejala3, $cf_gejala4) * 0.36;
+    $hasil3 = min($cf_gejala2, $cf_gejala3, $cf_gejala5, $cf_gejala6, $cf_gejala7) * 0.69;
+    $hasil4 = min($cf_gejala2, $cf_gejala3, $cf_gejala5) * 0.31;
+    $hasil5 = min($cf_gejala5, $cf_gejala5, $cf_gejala8, $cf_gejala9, $cf_gejala10) * 0.55;
+    $hasil6 = min($cf_gejala3, $cf_gejala5, $cf_gejala8, $cf_gejala9) * 0.45;
+    $hasil7 = min($cf_gejala3, $cf_gejala4, $cf_gejala11, $cf_gejala12, $cf_gejala13, $cf_gejala14, $cf_gejala15, $cf_gejala16) * 0.61;
+    $hasil8 = min($cf_gejala3, $cf_gejala4, $cf_gejala11, $cf_gejala12, $cf_gejala13, $cf_gejala14, $cf_gejala16) * 0.39;
+    $hasil9 = min($cf_gejala2, $cf_gejala3, $cf_gejala4, $cf_gejala12, $cf_gejala14, $cf_gejala16, $cf_gejala17, $cf_gejala18, $cf_gejala19, $cf_gejala20, $cf_gejala21) * 0.54;
+    $hasil10 = min($cf_gejala2, $cf_gejala3, $cf_gejala4, $cf_gejala12, $cf_gejala14, $cf_gejala16, $cf_gejala17, $cf_gejala19, $cf_gejala20, $cf_gejala21) * 0.46;
+    $hasil11 = min($cf_gejala5, $cf_gejala16, $cf_gejala19, $cf_gejala22, $cf_gejala23, $cf_gejala24) * 0.50;
+    $hasil12 = min($cf_gejala5, $cf_gejala16, $cf_gejala19, $cf_gejala22, $cf_gejala24) * 0.50;
+    $hasil13 = min($cf_gejala1, $cf_gejala4, $cf_gejala10, $cf_gejala12, $cf_gejala15, $cf_gejala16, $cf_gejala20, $cf_gejala25, $cf_gejala26, $cf_gejala27, $cf_gejala28, $cf_gejala29) * 0.64;
+    $hasil14 = min($cf_gejala1, $cf_gejala4, $cf_gejala12, $cf_gejala14, $cf_gejala16, $cf_gejala20, $cf_gejala26) * 0.36;
 
     //menggabungkan nilai CF rule dengan penyakit yang sama
-    $ispa = $hasil1($hasil2*(1-$hasil1));
-    $asma = $hasil3($hasil4*(1-$hasil3));
-    $bronkitis = $hasil5($hasil6*(1-$hasil5));
-    $bronkitisakut = $hasil7($hasil8*(1-$hasil7));
-    $tbparu = $hasil9($hasil10*(1-$hasil9));
-    $ppok = $hasil11($hasil12*(1-$hasil11));
-    $pneumonia = $hasil13($hasil4*(1-$hasil13));
+    $hasil15 = $hasil1+($hasil2*(1-$hasil1));
+    $hasil16 = $hasil3+($hasil4*(1-$hasil3));
+    $hasil17 = $hasil5+($hasil6*(1-$hasil5));
+    $hasil18 = $hasil7+($hasil8*(1-$hasil7));
+    $hasil19 = $hasil9+($hasil10*(1-$hasil9));
+    $hasil20 = $hasil11+($hasil12*(1-$hasil11));
+    $hasil21 = $hasil13+($hasil14*(1-$hasil13));
 
      // mencari nilai tertinggi dan menyimpan hasil diagnosa ke dalam variabel $hasil
-    $hasil = max($ispa, $asma, $bronkitis, $bronkitisakut, $tbparu, $ppok, $pneumonia);
-    if ($hasil == $ispa) {
+    $hasil = max($hasil15, $hasil16, $hasil17, $hasil18, $hasil19, $hasil20, $hasil21);
+    if ($hasil == $hasil15) {
         $penyakit_id = 1;
     } else 
-    if ($hasil == $asma){
+    if ($hasil == $hasil16){
         $penyakit_id = 2;
     } else
-    if ($hasil == $bronkitis) {
+    if ($hasil == $hasil17) {
         $penyakit_id = 3;
     } else
-    if ($hasil == $bronkitisakut) {
+    if ($hasil == $hasil18) {
         $penyakit_id = 4;
     } else
-    if ($hasil == $tbparu) {
+    if ($hasil == $hasil19) {
         $penyakit_id = 5;
     } else
-    if ($hasil == $ppok) {
+    if ($hasil == $hasil20) {
         $penyakit_id = 6;
     } else
-    if ($hasil == $pneumonia) {
+    if ($hasil == $hasil21) {
         $penyakit_id = 7;
     }
 
@@ -180,5 +180,35 @@ $nama_penyakit = $row_penyakit['penyakit_nama'];
         <br>
         <input type="submit" name="diagnosa" value="Diagnosa">
     </form>
+     <!--Bagian KOntak-->
+     <section id="kontak">
+                <h1 class="judul teks-tengah">Kontak</h1>
+                <div class="container">
+                    <div style="width: 50%;text-align: left;">
+                    <b> Telp :</b>
+                    <p> (0754) 410444</p>
+
+                    <b> Alamat :</b>
+                    <p> Talawi Hilir, Talawi, Kota Sawahlunto
+                    <p> Sumatera Barat </p>
+                    
+                    <b> Jam buka :</b>
+                    <p> 24 Jam</p>
+                    </div>
+                    <form action="send.php" method="post" target="_blank">
+                        <input type="text" name="name" placeholder="Nama"/>
+                        <input type="text" name="usia" placeholder="Usia"/>
+                        <input type="text" name="pesan" placeholder="Pesan Anda"/>
+                    </textarea>
+                    <br/>
+                    <button type="submit" name="submit" class="btn btn-biru" > Kirim Pesan</button>
+                    </form>
+                </div>
+                </section>
+                <!--Bagian Kontak-->
+        </main>
+        <footer>
+            <p> Web Diagnosa Penyakit Paru - Puskesmas Talawi</p>
+        </footer>
 </body>
 </html>
