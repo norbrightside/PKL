@@ -43,6 +43,35 @@ footer{
     margin: 10px 10px 5px 5px;
     width: 100%;
 }
+.content {
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 2em;
+    background: #007bff;
+    margin: auto;
+    width: 60%;
+    color: #fff;
+    padding: 1em 23% 1em;
+}
+.tabel-diagnosa {
+    margin: 0 auto;
+    width: 80%;
+}
+.btn-biruu {
+    background: #4285F4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block; /* Untuk membuat tombol menjadi blok agar dapat memanipulasi margin dan padding */
+    margin: 20px auto; /* Untuk memposisikan tombol di tengah halaman */
+    cursor: pointer;
+}
 /*-------------------------card----------------*/
 
 /*--------------------header & nav-------------*/
@@ -69,6 +98,10 @@ nav li{
     display: inline;
     list-style-type: none;
     margin-right: 20px;
+}
+header nav a img {
+    margin-right: 10px;
+    height: 40px;
 }
 /*-------------header & nav----------------------*/
 
@@ -154,6 +187,7 @@ input[type="text"], textarea{
     padding: 15px;
     border: none;
     border-radius: 4px;
+    place-items: center;
 }
 /*-------- text & margin--------*/
 
@@ -191,3 +225,33 @@ input[type="text"], textarea{
     }
 }
 /*-------- media querry------------*/
+
+/*combo box*/
+.list {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 8px 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #3a3a3a;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    cursor: pointer;
+  }
+  
+  .list option {
+    background: #fff;
+    color: #3a3a3a;
+    border-bottom: 1px solid #d9d9d9;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .list option:last-child {
+    border-bottom: none;
+  }

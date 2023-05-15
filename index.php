@@ -1,6 +1,7 @@
 <html>
     <head>
-    <title> Web Portofolio  </title>    
+    <title> Sistem Pakar  </title>  
+    <link rel="icon" href="assets/images/logo.png">  
     <meta name="viewport"   content="width=device-width, initial-scale=1">
     <meta name="description" content="Web Portofolio">
     <meta name="author" content="Ane">
@@ -36,7 +37,7 @@
     <body>
         <header>
             <nav>
-                <a href="index.php"> <b> Puskesmas Talawi</b> </a>
+            <a href="index.php"><img src="assets/images/logo.png" alt="Logo Puskesmas Talawi"><b> Puskesmas Talawi</b></a>
                 <ul>
                     <li> <a href="index.php"> Beranda </a></li>
                     <li> <a href="#blog"> Blog</a></li>
@@ -95,7 +96,7 @@
             <!---bagian blog-->
             <!--Bagian KOntak-->
             <section id="kontak">
-                <h1 class="judul teks-tengah">Kontak</h1>
+                <h1 class="judul teks-tengah">Kontak Pendaftaran</h1>
                 <div class="container">
                     <div style="width: 50%;text-align: left;">
                     <b> Telp :</b>
@@ -116,12 +117,12 @@
                     <br/>
                     <button type="submit" name="submit" class="btn btn-biru" > Kirim Pesan</button>
                     </form>
-                </div>
+                </iv>
                 </section>
                 <!--Bagian Kontak-->
         </main>
         <footer>
             <p> Web Diagnosa Penyakit Paru - Puskesmas Talawi</p>
         </footer>
-    </body>
+</body>
 </html>

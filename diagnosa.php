@@ -109,7 +109,8 @@ $nama_penyakit = $row_penyakit['penyakit_nama'];
  <!DOCTYPE html>
 <html>
 <head>
-<title> Web Portofolio  </title>    
+<link rel="icon" href="assets/images/logo.png">
+<title> Halaman Diagnosa  </title>    
     <meta name="viewport"   content="width=device-width, initial-scale=1">
     <meta name="description" content="Diagonsa Penyakit Paru">
     <meta name="keywords" content="Sistem Pakar">
@@ -145,7 +146,7 @@ $nama_penyakit = $row_penyakit['penyakit_nama'];
 <body>
 <header>
             <nav>
-                <a href="index.php"> <b> Puskesmas Talawi</b> </a>
+            <a href="index.php"><img src="assets/images/logo.png" alt="Logo Puskesmas Talawi"><b> Puskesmas Talawi</b></a>
                 <ul>
                     <li> <a href="index.php"> Beranda </a></li>
                     <li> <a href="#kontak"> Kontak</a></li>
@@ -153,36 +154,35 @@ $nama_penyakit = $row_penyakit['penyakit_nama'];
             </nav>
         </header>
     <h1>Halaman Gejala</h1>
+    <p1>Pilih gejela berikut sesuai kondisi anda</p1>
     <form method="post">
-        <table>
-            <tr>
-                <th>No.</th>
-                <th>Nama Gejala</th>
-                <th>Kondisi</th>
-            </tr>
+        
+        <table class="tabel-diagnosa">
             <?php $no = 1; ?>
             <?php while ($row_gejala = mysqli_fetch_assoc($result_gejala)) : ?>
                 <tr>
                     <td><?php echo $no; ?></td>
                     <td><?php echo $row_gejala['gejala_nama']; ?></td>
                     <td>
-                        <select name="kondisi_<?php echo $row_gejala['gejala_id']; ?>">
+                        <select  name="kondisi_<?php echo $row_gejala['gejala_id']; ?>" class="list">
                             <?php while ($row_kondisi = mysqli_fetch_assoc($result_kondisi)) : ?>
                                 <option value="<?php echo $row_kondisi['kondisi_nilai_cf']; ?>"><?php echo $row_kondisi['kondisi_nama']; ?></option>
                             <?php endwhile; ?>
                             <?php mysqli_data_seek($result_kondisi, 0); ?>
                         </select>
+                     
                     </td>
                 </tr>
                 <?php $no++; ?>
             <?php endwhile; ?>
         </table>
         <br>
-        <input type="submit" name="diagnosa" value="Diagnosa">
+        <input type="submit" name="diagnosa" class="btn btn-biruu" value="Diagnosa" >
     </form>
+
      <!--Bagian KOntak-->
      <section id="kontak">
-                <h1 class="judul teks-tengah">Kontak</h1>
+                <h1 class="judul teks-tengah">Kontak Pendaftaran</h1>
                 <div class="container">
                     <div style="width: 50%;text-align: left;">
                     <b> Telp :</b>
@@ -203,7 +203,7 @@ $nama_penyakit = $row_penyakit['penyakit_nama'];
                     <br/>
                     <button type="submit" name="submit" class="btn btn-biru" > Kirim Pesan</button>
                     </form>
-                </div>
+                </iv>
                 </section>
                 <!--Bagian Kontak-->
         </main>
