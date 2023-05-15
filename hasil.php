@@ -67,10 +67,107 @@ $nama_penyakit = $_SESSION['nama_penyakit']
         
         <section id="hasil diagonsa">
     <h1>Hasil Diagnosa Anda</h1> 
-    <p>Hasil diagnosa Anda adalah <?php echo $status;?> menderita <?php echo $nama_penyakit; ?></p> 
-    <p>Persentase kepercayaan: <?php echo round($hasil * 100, 2); ?>%</p> 
-	<a href="index.php" class="btn btn-biru"> Kembali ke Halaman Utama</a> 
+    <p>Berdasarkan gejala yang anda inputkan Hasil diagnosa Anda adalah <?php echo $status;?> menderita <?php echo $nama_penyakit; ?></p> 
+    <p>dengan Persentase kepercayaan: <?php echo round($hasil * 100, 2); ?>%</p> 
+    <p1>Silahkan mendaftar menggunakan form dibawah apabila anda ingin berkonsultasi dengan dokter di puskesmas</p1>
         </section>
+        <!---bagian blog-->
+        <section id="blog">
+                <h1 class="judul teks-tengah"> Macam Penyakit Paru</h1>
+                <div class="container">
+                    <!---artikel 1-->
+                    <article class="card">
+                        <img src="assets/images/ispa.png" class="blog-image" alt="Tuberkolosis (TBC)">
+                        <section class="blog-desc">
+                            <span> 28 Maret 2023</span>
+                            <h3 class="teks-kiri">
+                                <a href="blog/ispa.html">Infeksi Saluran Penafasan Atas (ISPA)</a> 
+                            </h3>
+                            <p class="teks-kiri">Ini adalah deskripsi blog</p>
+                        </section>
+                    </article>
+                    <!--Artikel 1-->
+
+                    <!--Artikel 2-->
+                    <article class="card">
+                        <img src="assets/images/asma.jpeg" class="blog-image" alt="Judul Blog 1">
+                        <section class="blog-desc">
+                            <span> 28 Maret 2023</span>
+                            <h3 class="teks-kiri">
+                                <a href="blog/asma">Asma</a> 
+                            </h3>
+                            <p class="teks-kiri">Ini adalah deskripsi blog</p>
+                        </section>
+                    </article>
+                    <!--Artikel 2-->
+
+                    <!--Artikel 3-->
+                    <article class="card">
+                        <img src="assets/images/bronkiolitis.png" class="blog-image" alt="Judul Blog 1">
+                        <section class="blog-desc">
+                            <span> 28 Maret 2023</span>
+                            <h3 class="teks-kiri">
+                                <a href="detail-blog.html">Bronkiolitis</a> 
+                            </h3>
+                            <p class="teks-kiri">Ini adalah deskripsi blog</p>
+                        </section>
+                    </article>
+                    <!--Artikel 3-->
+
+                    <!--Artikel 4-->
+                    <article class="card">
+                        <img src="assets/images/bronkitisakut.jpg" class="blog-image" alt="Judul Blog 1">
+                        <section class="blog-desc">
+                            <span> 28 Maret 2023</span>
+                            <h3 class="teks-kiri">
+                                <a href="detail-blog.html">Bronkitis Akut</a> 
+                            </h3>
+                            <p class="teks-kiri">Ini adalah deskripsi blog</p>
+                        </section>
+                    </article>
+                    <!--Artikel 4-->
+                   
+                    <!--Artikel 5-->
+                    <article class="card">
+                        <img src="assets/images/tuberkulosis.png" class="blog-image" alt="Judul Blog 1">
+                        <section class="blog-desc">
+                            <span> 28 Maret 2023</span>
+                            <h3 class="teks-kiri">
+                                <a href="detail-blog.html">Tuberkulosis Paru (TB Paru)</a> 
+                            </h3>
+                            <p class="teks-kiri">Ini adalah deskripsi blog</p>
+                        </section>
+                    </article>
+                    <!--Artikel 5-->
+
+                    <!--Artikel 6-->
+                    <article class="card">
+                        <img src="assets/images/ppok.png" class="blog-image" alt="Judul Blog 1">
+                        <section class="blog-desc">
+                            <span> 28 Maret 2023</span>
+                            <h3 class="teks-kiri">
+                                <a href="detail-blog.html">Penyakit Paru Obstruktif Kronik (PPOK)</a> 
+                            </h3>
+                            <p class="teks-kiri">Ini adalah deskripsi blog</p>
+                        </section>
+                    </article>
+                    <!--Artikel 6-->
+
+                    <!--Artikel 7-->
+                    <article class="card">
+                        <img src="assets/images/pneumonia.GIF" class="blog-image" alt="Judul Blog 1">
+                        <section class="blog-desc">
+                            <span> 28 Maret 2023</span>
+                            <h3 class="teks-kiri">
+                                <a href="detail-blog.html">Pneumonia</a> 
+                            </h3>
+                            <p class="teks-kiri">Ini adalah deskripsi blog</p>
+                        </section>
+                    </article>
+                    <!--Artikel 7-->
+                </div>
+            </section>
+            <!---bagian blog-->
     <section id="kontak">
                 <h1 class="judul teks-tengah">Kontak Pendaftaran</h1>
                 <div class="container">

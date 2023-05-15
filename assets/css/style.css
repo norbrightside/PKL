@@ -42,6 +42,13 @@ footer{
     border: 1px solid #fff;
     margin: 10px 10px 5px 5px;
     width: 100%;
+    
+}
+.card a{
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #4285F4;
 }
 .content {
     font-weight: 400;
@@ -139,6 +146,10 @@ header nav a img {
     background-color: #f6f9fc;
     padding-top: 30px;
 }
+.item { 
+    width: 400px; 
+    height: 400px; 
+  } 
 
 .blog-desc{
     padding: 10px 10px 10px 10px;

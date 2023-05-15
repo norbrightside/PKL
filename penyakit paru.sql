@@ -56,8 +56,8 @@ CREATE DATABASE IF NOT EXISTS penyakit_paru;
 ('Nyeri Kepala'),
 ('Hidung Tersumbat');
  INSERT INTO kondisi (kondisi_nama, kondisi_nilai_cf) VALUES
-('Tidak', 0),
+('Tidak', 0.2),
 ('Iya', 1),
 ('Hampir Iya', 0.8),
 ('Mungkin', 0.6),
-('Hampir Tidak', 0.2);
+('Hampir Tidak', 0.4);
