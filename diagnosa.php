@@ -153,8 +153,10 @@ $nama_penyakit = $row_penyakit['penyakit_nama'];
                 </ul>
             </nav>
         </header>
+    <section id="gejala" class="content">
     <h1>Halaman Gejala</h1>
-    <p1>Pilih gejela berikut sesuai kondisi anda</p1>
+    <h4>Pilih gejela berikut sesuai kondisi anda</h4>
+    </section>
     <form method="post">
         
         <table class="tabel-diagnosa">

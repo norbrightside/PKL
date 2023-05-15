@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>Asma: Penyebab, Gejala, Pengobatan, dan Pencegahan</title>
+    <link rel="icon" href="assets/images/logo.png">  
+    <meta name="viewport"   content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web Portofolio">
+    <meta name="author" content="Ane">
+    <meta name="keywords" content="web Portofolio">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+      <a href="index.php"><img src="assets\images\logo.png" alt="Logo Puskesmas Talawi"><b> Puskesmas Talawi</b></a>
+          <ul>
+              <li> <a href="index.php"> Beranda </a></li>
+              <li> <a href="#kontak"> Kontak</a></li>
+          </ul>
+      </nav>
+  </header>
+    <div class="content">
+      <h1>Asma: Penyebab, Gejala, Pengobatan, dan Pencegahan</h1>
+      <h2>Pengertian Asma</h2>
+      <p>Asma adalah penyakit kronis pada saluran pernapasan yang ditandai dengan sesak akibat peradangan dan penyempitan pada saluran napas. Asma dapat diderita oleh semua golongan usia, baik muda maupun tua.</p>
+      <p>Penderita asma memiliki saluran pernapasan yang lebih sensitif dibandingkan orang normal. Ketika paru-paru terpapar pemicu asma, maka otot-otot di saluran pernapasan akan kaku sehingga membuat saluran tersebut menyempit. Selain itu, produksi dahak juga meningkat. Kombinasi dari kondisi tersebut membuat penderita mengalami gejala asma.</p>
+      <p><img src="assets/images/asma1.jpg"></p>
+      <p>Berdasarkan laporan Kementerian Kesehatan RI di tahun 2018, diperkirakan ada 2,4 persen dari seluruh penduduk Indonesia yang menderita asma. Sedangkan menurut data WHO di tahun 2019, penderita asma di seluruh dunia mencapai 262 juta orang, dengan angka kematian akibat asma mencapai 461.000 orang.</p>
+      <h2>Penyebab dan Gejala Asma</h2>
+      <p>Meskipun penyebabnya belum diketahui secara pasti, ada beberapa hal yang kerap menjadi pemicu asma, yaitu:</p>
+      <ul>
+        <li>Asap rokok</li>
+        <li>Debu</li>
+        <li>Bulu hewan</li>
+        <li>Udara dingin</li>
+        <li>Infeksi virus</li>
+        <li>Paparan zat kimia</li>
+      </ul>
+      <p>Sejumlah pemicu tersebut dapat menimbulkan keluhan pada penderita asma, seperti sulit bernapas, batuk kering, mengi, dan rasa nyeri atau sesak di dada.</p>
+      <h2>Pengobatan dan Pencegahan Asma</h2>
+      <p>Pengobatan asma dapat akan disesuaikan dengan kondisi pasien. Tujuannya adalah untuk meredakan gejala asma, mencegah kekambuhan gejala, serta mengurangi pembengkakan dan penyempitan pada saluran pernapasan. Metodenya bisa berupa pemberian obat-obatan berupa inhaler asma, nebulisasi, obat minum atau operasi.</p>
+      <p>Meski sulit dicegah, ada upaya yang dapat dilakukan untuk menghindari terjadinya serangan asma, antara lain dengan:</p>
+      <ul>
+        <li>Menjalani vaksinasi influenza dan pneumonia secara teratur</li>
+        <li>Mengetahui pemicu munculnya gejala asma dan menghindarinya</li>
+        <li>Melakukan pemeriksaan ke dokter bila gejala tidak juga membaik setelah menjalani pengobatan</li>
+      </ul>
+    </div>
+    <section id="kontak">
+      <h1 class="judul teks-tengah">Kontak Pendaftaran</h1>
+      <div class="container">
+          <div style="width: 50%;text-align: left;">
+          <b> Telp :</b>
+          <p> (0754) 410444</p>
+
+          <b> Alamat :</b>
+          <p> Talawi Hilir, Talawi, Kota Sawahlunto
+          <p> Sumatera Barat </p>
+          
+          <b> Jam buka :</b>
+          <p> 24 Jam</p>
+          </div>
+          <form action="send.php" method="post" target="_blank">
+              <input type="text" name="name" placeholder="Nama"/>
+              <input type="text" name="usia" placeholder="Usia"/>
+              <input type="text" name="pesan" placeholder="Pesan Anda"/>
+          </textarea>
+          <br/>
+          <button type="submit" name="submit" class="btn btn-biru" > Kirim Pesan</button>
+          </form>
+      </iv>
+      </section>
+      <!--Bagian Kontak-->
+  </body>
+</html>

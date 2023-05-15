@@ -5,7 +5,35 @@ body{
     padding: 0;
     background-color: #fff !important;   
 }
-
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+   h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+   h2 {
+    font-size: 24px;
+  }
+  h3{
+    font-size: 13;
+  }
+  h4{
+    font-size: 14;
+    text-align: center;
+  }
+   ul {
+    list-style: disc;
+    margin-left: 30px;
+  }
+   li {
+    margin-bottom: 8px;
+  }
+   p {
+    margin-bottom: 16px;
+  }
 * {
     box-sizing: border-box;
 }
@@ -49,16 +77,6 @@ footer{
     font-weight: 400;
     text-decoration: none;
     color: #4285F4;
-}
-.content {
-    font-weight: 400;
-    font-size: 16px;
-    border-radius: 2em;
-    background: #007bff;
-    margin: auto;
-    width: 60%;
-    color: #fff;
-    padding: 1em 23% 1em;
 }
 .tabel-diagnosa {
     margin: 0 auto;
