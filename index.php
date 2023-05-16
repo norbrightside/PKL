@@ -52,7 +52,7 @@
             <section id="intro">
                 <div id="intro-text">
                     <p class="text-putih"> Hallo selamat datang di sistem pakar diagonasa</p>
-                    <h1> Penyakit Paru-Paru</h1>
+                    <h1>Penyakit Paru-Paru</h1>
                     <h2 class="text-putih"> Puskesmas Talawi</h2>
                     <a href="diagnosa.php" class="btn btn-putih">Mulai Diagnosa</a>
                 </div>
