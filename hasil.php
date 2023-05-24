@@ -77,7 +77,6 @@ $nama_penyakit = $_SESSION['nama_penyakit']
                     <article class="card">
                         <img src="assets/images/ispa.png" class="blog-image" alt="ispa">
                         <section class="blog-desc">
-                            <span> 26 Maret 2023</span>
                             <h3 class="teks-kiri">
                                 <a href="ispa.html">Infeksi Saluran Penafasan Atas (ISPA)</a> 
                             </h3>
@@ -89,7 +88,6 @@ $nama_penyakit = $_SESSION['nama_penyakit']
                     <article class="card">
                         <img src="assets/images/asma.jpeg" class="blog-image" alt="asma">
                         <section class="blog-desc">
-                            <span> 27 Maret 2023</span>
                             <h3 class="teks-kiri">
                                 <a href="asma.html">Asma</a> 
                             </h3>
@@ -101,7 +99,6 @@ $nama_penyakit = $_SESSION['nama_penyakit']
                     <article class="card">
                         <img src="assets/images/bronkiolitis.png" class="blog-image" alt="bronkiolitis">
                         <section class="blog-desc">
-                            <span> 28 Maret 2023</span>
                             <h3 class="teks-kiri">
                                 <a href="bronkiolitis.html">Bronkiolitis</a> 
                             </h3>
@@ -113,7 +110,6 @@ $nama_penyakit = $_SESSION['nama_penyakit']
                     <article class="card">
                         <img src="assets/images/bronkitisakut.jpg" class="blog-image" alt="bronkitisakut">
                         <section class="blog-desc">
-                            <span> 1 mei 2023</span>
                             <h3 class="teks-kiri">
                                 <a href="bronkitisakut.html">Bronkitis Akut</a> 
                             </h3>
@@ -125,7 +121,6 @@ $nama_penyakit = $_SESSION['nama_penyakit']
                     <article class="card">
                         <img src="assets/images/tuberkulosis.png" class="blog-image" alt="tuberkulosis">
                         <section class="blog-desc">
-                            <span> 4 Mei 2023</span>
                             <h3 class="teks-kiri">
                                 <a href="tbparu.html">Tuberkulosis Paru (TB Paru)</a> 
                             </h3>
@@ -137,7 +132,6 @@ $nama_penyakit = $_SESSION['nama_penyakit']
                     <article class="card">
                         <img src="assets/images/ppok.png" class="blog-image" alt="PPOK">
                         <section class="blog-desc">
-                            <span> 7 Mei 2023</span>
                             <h3 class="teks-kiri">
                                 <a href="ppok.html">Penyakit Paru Obstruktif Kronik (PPOK)</a> 
                             </h3>
@@ -149,7 +143,6 @@ $nama_penyakit = $_SESSION['nama_penyakit']
                     <article class="card">
                         <img src="assets/images/pneumonia.GIF" class="blog-image" alt="Pneumonia">
                         <section class="blog-desc">
-                            <span> 10 Mei 2023</span>
                             <h3 class="teks-kiri">
                                 <a href="pneumonia.html">Pneumonia</a> 
                             </h3>

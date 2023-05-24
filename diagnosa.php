@@ -58,35 +58,35 @@ if (isset($_POST['diagnosa'])) {
     $hasil14 = min($cf_gejala1, $cf_gejala4, $cf_gejala12, $cf_gejala14, $cf_gejala16, $cf_gejala20, $cf_gejala26) * 0.36;
 
     //menggabungkan nilai CF rule dengan penyakit yang sama
-    $hasil15 = $hasil1+($hasil2*(1-$hasil1));
-    $hasil16 = $hasil3+($hasil4*(1-$hasil3));
-    $hasil17 = $hasil5+($hasil6*(1-$hasil5));
-    $hasil18 = $hasil7+($hasil8*(1-$hasil7));
-    $hasil19 = $hasil9+($hasil10*(1-$hasil9));
-    $hasil20 = $hasil11+($hasil12*(1-$hasil11));
-    $hasil21 = $hasil13+($hasil14*(1-$hasil13));
+    $ispa = $hasil1+($hasil2*(1-$hasil1));
+    $asma = $hasil3+($hasil4*(1-$hasil3));
+    $bronkiolitis = $hasil5+($hasil6*(1-$hasil5));
+    $bronkitisakut = $hasil7+($hasil8*(1-$hasil7));
+    $tuberkolosis = $hasil9+($hasil10*(1-$hasil9));
+    $ppok = $hasil11+($hasil12*(1-$hasil11));
+    $pneumonia = $hasil13+($hasil14*(1-$hasil13));
 
      // mencari nilai tertinggi dan menyimpan hasil diagnosa ke dalam variabel $hasil
-    $hasil = max($hasil15, $hasil16, $hasil17, $hasil18, $hasil19, $hasil20, $hasil21);
-    if ($hasil == $hasil15) {
+    $hasil = max($ispa, $asma, $bronkiolitis, $bronkitisakut, $tuberkolosis, $ppok, $pneumonia);
+    if ($hasil == $ispa) {
         $penyakit_id = 1;
     } else 
-    if ($hasil == $hasil16){
+    if ($hasil == $asma){
         $penyakit_id = 2;
     } else
-    if ($hasil == $hasil17) {
+    if ($hasil == $bronkiolitis) {
         $penyakit_id = 3;
     } else
-    if ($hasil == $hasil18) {
+    if ($hasil == $bronkitisakut) {
         $penyakit_id = 4;
     } else
-    if ($hasil == $hasil19) {
+    if ($hasil == $tuberkolosis) {
         $penyakit_id = 5;
     } else
-    if ($hasil == $hasil20) {
+    if ($hasil == $ppok) {
         $penyakit_id = 6;
     } else
-    if ($hasil == $hasil21) {
+    if ($hasil == $pneumonia) {
         $penyakit_id = 7;
     }
 
