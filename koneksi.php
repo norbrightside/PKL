@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$user = "root";
-$password = "";
-$database = "penyakit_paru";
+$user = "id21325529_root";
+$password = "Rizki5665.";
+$database = "id21325529_penyakit_paru";
 // membuat koneksi
 $conn = mysqli_connect($host, $user, $password, $database);
 // check koneksi

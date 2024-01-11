@@ -1,5 +1,4 @@
-CREATE DATABASE IF NOT EXISTS penyakit_paru;
- USE penyakit_paru;
+
  CREATE TABLE penyakit (
   penyakit_id INT NOT NULL AUTO_INCREMENT,
   penyakit_nama VARCHAR(100) NOT NULL,
